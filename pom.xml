@@ -10,8 +10,8 @@
 
     <repositories>
         <repository>
-            <id>austinv11/maven</id>
-            <url>https://dl.bintray.com/austinv11/maven</url>
+            <id>jcenter</id>
+            <url>https://jcenter.bintray.com/</url>
         </repository>
         <repository>
             <id>jitpack.io</id>
@@ -19,22 +19,16 @@
         </repository>
     </repositories>
 
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>com.discord4j</groupId>
-                <artifactId>bom</artifactId>
-                <version>3.0.0-pre.0</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
-
     <dependencies>
         <dependency>
             <groupId>com.discord4j</groupId>
             <artifactId>discord4j-core</artifactId>
+            <version>3.0.0.M1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>1.8.0-beta2</version>
         </dependency>
     </dependencies>
 </project>
